@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script"></script>
+</head>
+<body class="page-container">
+    <header class="page-header">
+        <div class="header-logo">
+            <img src="https://static.thenounproject.com/png/7463672-84.png" alt="Smart City Logo" class="logo-image" />
+        </div>    
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="searchForm">
+      <input type="text" id="searchInput" placeholder="введите название заведения...">
+        <button type="submit">Поиск</button>   
+    </form>
+      <div id="searchResults"></div>
+        <section class="coffee-section">
+            <div class="container">
+                <h2 class="section-title">Попробуйте WiFi Coffee в В ближайших заведениях </h2>
+                <p class="section-description">Насладитесь ароматным кофе с бесплатным WiFi в уютном заведении ;)</p>
+                <div class="container">
+    <div id="map"></div>
+    <div id="results"></div>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script src="script.js"></script>
+                </div>
+                <div class="coffee-grid">
+                    <img src="https://th.bing.com/th/id/OIP.LiRir4NCQY75MXH0rrJQ-gHaE8?w=281&h=187&c=7&r=0&o=5&pid=1.7" alt="Кофе 1" class="coffee-image" />
+                    <img src="https://th.bing.com/th/id/OIP.VxHnhRJogMPe8Wg3QT56bQHaE8?w=263&h=180&c=7&r=0&o=5&pid=1.7" alt="Кофе 2" class="coffee-image" />
+                    <img src="https://th.bing.com/th/id/OIP.cTufSdtdhN2CKsIcLlu4yAHaE8?w=279&h=186&c=7&r=0&o=5&pid=1.7" alt="Кофе 3" class="coffee-image" />
+                    <img src="https://th.bing.com/th/id/OIP.7tshzNDd5B5cF_c0EIIdmQHaEo?w=280&h=180&c=7&r=0&o=5&pid=1.7" alt="Кофе 4" class="coffee-image" />
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
